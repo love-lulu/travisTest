@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node name.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/love-lulu/NTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/love-lulu/NTest/issues"
+  },
+  "homepage": "https://github.com/love-lulu/NTest#readme"
+}
