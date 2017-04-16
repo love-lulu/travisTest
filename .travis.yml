@@ -6,9 +6,6 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
   
 
-
-
-
 after_script:
 - scp -o StrictHostKeyChecking=no name.js root@59.110.168.70
 - mv id_rsa ~/.ssh -f
