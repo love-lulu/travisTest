@@ -1,14 +1,11 @@
 language: node_js
-node_js: -6
+node_js: "-6"
 before_install:
 - openssl aes-256-cbc -K $encrypted_0c96581be787_key -iv $encrypted_0c96581be787_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- mv id_rsa ~/.ssh -f
 - chmod 600 ~/.ssh/id_rsa
-# 配置 ssh
-- eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-- ssh_config ~/.ssh/config
+- echo -e "Host 59.110.168.70\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+
 
 
 after_script:
