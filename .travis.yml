@@ -7,6 +7,6 @@ before_install:
   
 
 after_script:
-- scp -o StrictHostKeyChecking=no name.js root@59.110.168.70
+- scp -o StrictHostKeyChecking=no name.js root@59.110.168.70:/home/zhangning
 - mv id_rsa ~/.ssh -f
 - chmod 600 ~/.ssh/id_rsa
