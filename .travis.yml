@@ -4,9 +4,10 @@ node_js:
 before_install:
 - openssl aes-256-cbc -K $encrypted_0c96581be787_key -iv $encrypted_0c96581be787_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
-  
+- mv id_rsa ~/.ssh -f
+- chmod 600 ~/.ssh/id_rsa  
 
 after_script:
 - scp -o StrictHostKeyChecking=no name.js root@59.110.168.70:/home/zhangning
-- mv id_rsa ~/.ssh -f
-- chmod 600 ~/.ssh/id_rsa
+
+
