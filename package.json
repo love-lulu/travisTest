@@ -4,7 +4,7 @@
   "description": "testss",
   "main": "index.js",
   "scripts": {
-    "test": "node name.js"
+    "test": "karma start karma.conf.js — single-run"
   },
   "repository": {
     "type": "git",
