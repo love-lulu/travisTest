@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/love-lulu/NTest/issues"
   },
-  "homepage": "https://github.com/love-lulu/NTest#readme"
+  "homepage": "https://github.com/love-lulu/NTest#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs": "^2.1.7"
+  }
 }
