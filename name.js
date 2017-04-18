@@ -1,2 +1,3 @@
-console.log("benben")
-console.log("tutu")
+window.test = function(num) {
+	return num + 1
+}
