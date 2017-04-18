@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - 6
+script: node_modules/karma/bin/karma start karma.conf.js --single-run
 
 after_script:
 - scp -o StrictHostKeyChecking=no name.js root@59.110.168.70:/home/zhangning
